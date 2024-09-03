@@ -11,6 +11,7 @@ export const PdfViewer = (props) => {
       (async () => {
         PSPDFKit = await import('pspdfkit');
         try {
+          console.log('PSPDFKit Container Element: ', container);
           await PSPDFKit.load({
             theme: PSPDFKit.Theme.AUTO,
             container: container,
